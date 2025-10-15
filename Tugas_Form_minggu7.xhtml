@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <title>Formulir Registrasi Data Mahasiswa</title>
+  <style type="text/css">
+
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: 
+        linear-gradient(to bottom, rgba(75, 110, 185, 0) 80%, rgba(173, 216, 230, 0.9) 100%),
+        url('BGHotel.jpg') top center / cover no-repeat;
+      background-attachment: fixed;
+      margin: 40px;
+      color: #333;
+    }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 10px 40px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+    .header img {
+      width: 150px; 
+      height: auto;
+    }
+
+    .header h1 {
+      flex: 1;
+      text-align: center;
+      color: #004aad;
+      margin: 0;
+      font-size: 56px;
+      font-weight: bold;
+    }
+
+
+    form {
+      width: 60%;
+      margin: 0 auto 30px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px 30px;
+    }
+
+    fieldset {
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    select {
+      width: 96%;
+      padding: 6px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+
+
+    input[type="radio"] {
+      margin-left: 10px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff0800;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo1.png" alt="Logo Kiri" />
+    <h1>Formulir Reservasi Hotel</h1>
+    <h2></h2>
+  </div>
+  <!-- PERSONAL DATA -->
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Data</legend>
+      <p>1. Name<br />
+        <input type="text" name="name" />
+      </p>
+      <p>2. Gender<br />
+        <select name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+      </p>
+      <p>3. Email Address<br />
+        <input type="text" name="email" />
+      </p>
+      <p>4. Telp Number<br />
+        <input type="text" name="telp" />
+      </p>
+    </fieldset>
+  </form>
+
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Reservation Detail</legend>
+      <p>1. Reservation Name<br />
+        <input type="text" name="reservation_name" />
+      </p>
+      <p>2. Booking Date<br />
+        <input type="text" name="booking_date" />
+      </p>
+      <p>3. Room Type<br />
+        <select name="room_type">
+          <option value="">-- Select Room Type --</option>
+          <option value="deluxe">Deluxe</option>
+          <option value="standard">Standard</option>
+        </select>
+      </p>
+      <p>4. Bed Type<br />
+        <select name="bed_type">
+          <option value="">-- Select Bed Type --</option>
+          <option value="single">Single Bed</option>
+          <option value="double">Double Bed</option>
+        </select>
+      </p>
+      <p>5. Breakfast<br />
+        <input type="radio" name="breakfast" value="with" /> With Breakfast
+        <input type="radio" name="breakfast" value="without" /> Without Breakfast
+      </p>
+    </fieldset>
+  </form>
+
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Payment</legend>
+      <p>1. Check-in Date<br />
+        <input type="text" name="checkin" />
+      </p>
+      <p>2. Check-out Date<br />
+        <input type="text" name="checkout" />
+      </p>
+      <p>3. Payment Method<br />
+        <select name="payment">
+          <option value="cash">Cash</option>
+          <option value="transfer">Bank Transfer</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
